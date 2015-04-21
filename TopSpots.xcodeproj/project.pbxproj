@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		981B0EC318F2C259003E1DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981B0EC218F2C259003E1DB3 /* Foundation.framework */; };
+		981B0EC518F2C259003E1DB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981B0EC418F2C259003E1DB3 /* CoreGraphics.framework */; };
+		981B0EC718F2C259003E1DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981B0EC618F2C259003E1DB3 /* UIKit.framework */; };
+		981B0ECD18F2C259003E1DB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 981B0ECB18F2C259003E1DB3 /* InfoPlist.strings */; };
+		981B0ECF18F2C259003E1DB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0ECE18F2C259003E1DB3 /* main.m */; };
+		981B0ED318F2C259003E1DB3 /* TopSpotsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0ED218F2C259003E1DB3 /* TopSpotsAppDelegate.m */; };
+		981B0ED618F2C259003E1DB3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 981B0ED418F2C259003E1DB3 /* Main_iPhone.storyboard */; };
+		981B0EDC18F2C259003E1DB3 /* TopSpotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0EDB18F2C259003E1DB3 /* TopSpotsViewController.m */; };
+		981B0EDE18F2C259003E1DB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 981B0EDD18F2C259003E1DB3 /* Images.xcassets */; };
+		981B0EE518F2C259003E1DB3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981B0EE418F2C259003E1DB3 /* XCTest.framework */; };
+		981B0EE618F2C259003E1DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981B0EC218F2C259003E1DB3 /* Foundation.framework */; };
+		981B0EE718F2C259003E1DB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981B0EC618F2C259003E1DB3 /* UIKit.framework */; };
+		981B0EEF18F2C259003E1DB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 981B0EED18F2C259003E1DB3 /* InfoPlist.strings */; };
+		981B0EF118F2C259003E1DB3 /* TopSpotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0EF018F2C259003E1DB3 /* TopSpotsTests.m */; };
+		981B0EFD18F2C293003E1DB3 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0EFC18F2C293003E1DB3 /* FlickrFetcher.m */; };
+		981B0F0318F2C60E003E1DB3 /* TopPlaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0F0218F2C60E003E1DB3 /* TopPlaces.m */; };
+		981B0F0718FEA6AB003E1DB3 /* CityPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0F0618FEA6AB003E1DB3 /* CityPhotosViewController.m */; };
+		981B0F0D19069211003E1DB3 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0F0C19069211003E1DB3 /* ImageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		98C73EC51A2BEBF800CE9ACC /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = file.bplist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		981B0EE818F2C259003E1DB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 981B0EB718F2C259003E1DB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 981B0EBE18F2C259003E1DB3;
+			remoteInfo = TopSpots;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		981B0EBF18F2C259003E1DB3 /* TopSpots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopSpots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		981B0EC218F2C259003E1DB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		981B0EC418F2C259003E1DB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		981B0EC618F2C259003E1DB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		981B0ECA18F2C259003E1DB3 /* TopSpots-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopSpots-Info.plist"; sourceTree = "<group>"; };
+		981B0ECC18F2C259003E1DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		981B0ECE18F2C259003E1DB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		981B0ED018F2C259003E1DB3 /* TopSpots-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TopSpots-Prefix.pch"; sourceTree = "<group>"; };
+		981B0ED118F2C259003E1DB3 /* TopSpotsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopSpotsAppDelegate.h; sourceTree = "<group>"; };
+		981B0ED218F2C259003E1DB3 /* TopSpotsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopSpotsAppDelegate.m; sourceTree = "<group>"; };
+		981B0ED518F2C259003E1DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		981B0EDA18F2C259003E1DB3 /* TopSpotsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopSpotsViewController.h; sourceTree = "<group>"; };
+		981B0EDB18F2C259003E1DB3 /* TopSpotsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopSpotsViewController.m; sourceTree = "<group>"; };
+		981B0EDD18F2C259003E1DB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		981B0EE318F2C259003E1DB3 /* TopSpotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopSpotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		981B0EE418F2C259003E1DB3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		981B0EEC18F2C259003E1DB3 /* TopSpotsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopSpotsTests-Info.plist"; sourceTree = "<group>"; };
+		981B0EEE18F2C259003E1DB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		981B0EF018F2C259003E1DB3 /* TopSpotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopSpotsTests.m; sourceTree = "<group>"; };
+		981B0EFB18F2C293003E1DB3 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		981B0EFC18F2C293003E1DB3 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		981B0F0118F2C60E003E1DB3 /* TopPlaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopPlaces.h; path = ../TopPlaces.h; sourceTree = "<group>"; };
+		981B0F0218F2C60E003E1DB3 /* TopPlaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopPlaces.m; path = ../TopPlaces.m; sourceTree = "<group>"; };
+		981B0F0418F2C941003E1DB3 /* FlickrAPIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlickrAPIKey.h; path = ../FlickrAPIKey.h; sourceTree = "<group>"; };
+		981B0F0518FEA6AB003E1DB3 /* CityPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPhotosViewController.h; sourceTree = "<group>"; };
+		981B0F0618FEA6AB003E1DB3 /* CityPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityPhotosViewController.m; sourceTree = "<group>"; };
+		981B0F0B19069211003E1DB3 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		981B0F0C19069211003E1DB3 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		981B0EBC18F2C259003E1DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B0EC518F2C259003E1DB3 /* CoreGraphics.framework in Frameworks */,
+				981B0EC718F2C259003E1DB3 /* UIKit.framework in Frameworks */,
+				981B0EC318F2C259003E1DB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981B0EE018F2C259003E1DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B0EE518F2C259003E1DB3 /* XCTest.framework in Frameworks */,
+				981B0EE718F2C259003E1DB3 /* UIKit.framework in Frameworks */,
+				981B0EE618F2C259003E1DB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		981B0EB618F2C259003E1DB3 = {
+			isa = PBXGroup;
+			children = (
+				981B0EC818F2C259003E1DB3 /* TopSpots */,
+				981B0EEA18F2C259003E1DB3 /* TopSpotsTests */,
+				981B0EC118F2C259003E1DB3 /* Frameworks */,
+				981B0EC018F2C259003E1DB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		981B0EC018F2C259003E1DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				981B0EBF18F2C259003E1DB3 /* TopSpots.app */,
+				981B0EE318F2C259003E1DB3 /* TopSpotsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		981B0EC118F2C259003E1DB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				981B0EC218F2C259003E1DB3 /* Foundation.framework */,
+				981B0EC418F2C259003E1DB3 /* CoreGraphics.framework */,
+				981B0EC618F2C259003E1DB3 /* UIKit.framework */,
+				981B0EE418F2C259003E1DB3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		981B0EC818F2C259003E1DB3 /* TopSpots */ = {
+			isa = PBXGroup;
+			children = (
+				981B0F0118F2C60E003E1DB3 /* TopPlaces.h */,
+				981B0F0218F2C60E003E1DB3 /* TopPlaces.m */,
+				981B0ED418F2C259003E1DB3 /* Main_iPhone.storyboard */,
+				981B0F0B19069211003E1DB3 /* ImageViewController.h */,
+				981B0F0C19069211003E1DB3 /* ImageViewController.m */,
+				981B0F0518FEA6AB003E1DB3 /* CityPhotosViewController.h */,
+				981B0F0618FEA6AB003E1DB3 /* CityPhotosViewController.m */,
+				981B0EDA18F2C259003E1DB3 /* TopSpotsViewController.h */,
+				981B0EDB18F2C259003E1DB3 /* TopSpotsViewController.m */,
+				981B0EFA18F2C293003E1DB3 /* Flickr Fetcher */,
+				981B0EDD18F2C259003E1DB3 /* Images.xcassets */,
+				981B0EC918F2C259003E1DB3 /* Supporting Files */,
+			);
+			path = TopSpots;
+			sourceTree = "<group>";
+		};
+		981B0EC918F2C259003E1DB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				981B0ED118F2C259003E1DB3 /* TopSpotsAppDelegate.h */,
+				981B0ED218F2C259003E1DB3 /* TopSpotsAppDelegate.m */,
+				981B0ECA18F2C259003E1DB3 /* TopSpots-Info.plist */,
+				981B0ECB18F2C259003E1DB3 /* InfoPlist.strings */,
+				981B0ECE18F2C259003E1DB3 /* main.m */,
+				981B0ED018F2C259003E1DB3 /* TopSpots-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		981B0EEA18F2C259003E1DB3 /* TopSpotsTests */ = {
+			isa = PBXGroup;
+			children = (
+				981B0EF018F2C259003E1DB3 /* TopSpotsTests.m */,
+				981B0EEB18F2C259003E1DB3 /* Supporting Files */,
+			);
+			path = TopSpotsTests;
+			sourceTree = "<group>";
+		};
+		981B0EEB18F2C259003E1DB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				981B0EEC18F2C259003E1DB3 /* TopSpotsTests-Info.plist */,
+				981B0EED18F2C259003E1DB3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		981B0EFA18F2C293003E1DB3 /* Flickr Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				981B0F0418F2C941003E1DB3 /* FlickrAPIKey.h */,
+				981B0EFB18F2C293003E1DB3 /* FlickrFetcher.h */,
+				981B0EFC18F2C293003E1DB3 /* FlickrFetcher.m */,
+			);
+			path = "Flickr Fetcher";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		981B0EBE18F2C259003E1DB3 /* TopSpots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 981B0EF418F2C259003E1DB3 /* Build configuration list for PBXNativeTarget "TopSpots" */;
+			buildPhases = (
+				981B0EBB18F2C259003E1DB3 /* Sources */,
+				981B0EBC18F2C259003E1DB3 /* Frameworks */,
+				981B0EBD18F2C259003E1DB3 /* Resources */,
+			);
+			buildRules = (
+				98C73EC51A2BEBF800CE9ACC /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = TopSpots;
+			productName = TopSpots;
+			productReference = 981B0EBF18F2C259003E1DB3 /* TopSpots.app */;
+			productType = "com.apple.product-type.application";
+		};
+		981B0EE218F2C259003E1DB3 /* TopSpotsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 981B0EF718F2C259003E1DB3 /* Build configuration list for PBXNativeTarget "TopSpotsTests" */;
+			buildPhases = (
+				981B0EDF18F2C259003E1DB3 /* Sources */,
+				981B0EE018F2C259003E1DB3 /* Frameworks */,
+				981B0EE118F2C259003E1DB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				981B0EE918F2C259003E1DB3 /* PBXTargetDependency */,
+			);
+			name = TopSpotsTests;
+			productName = TopSpotsTests;
+			productReference = 981B0EE318F2C259003E1DB3 /* TopSpotsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		981B0EB718F2C259003E1DB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TopSpots;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Baskaran Loganathan";
+				TargetAttributes = {
+					981B0EBE18F2C259003E1DB3 = {
+						DevelopmentTeam = 2K65JWXH5N;
+					};
+					981B0EE218F2C259003E1DB3 = {
+						TestTargetID = 981B0EBE18F2C259003E1DB3;
+					};
+				};
+			};
+			buildConfigurationList = 981B0EBA18F2C259003E1DB3 /* Build configuration list for PBXProject "TopSpots" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 981B0EB618F2C259003E1DB3;
+			productRefGroup = 981B0EC018F2C259003E1DB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				981B0EBE18F2C259003E1DB3 /* TopSpots */,
+				981B0EE218F2C259003E1DB3 /* TopSpotsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		981B0EBD18F2C259003E1DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B0EDE18F2C259003E1DB3 /* Images.xcassets in Resources */,
+				981B0ED618F2C259003E1DB3 /* Main_iPhone.storyboard in Resources */,
+				981B0ECD18F2C259003E1DB3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981B0EE118F2C259003E1DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B0EEF18F2C259003E1DB3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		981B0EBB18F2C259003E1DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B0F0718FEA6AB003E1DB3 /* CityPhotosViewController.m in Sources */,
+				981B0F0318F2C60E003E1DB3 /* TopPlaces.m in Sources */,
+				981B0ED318F2C259003E1DB3 /* TopSpotsAppDelegate.m in Sources */,
+				981B0ECF18F2C259003E1DB3 /* main.m in Sources */,
+				981B0EFD18F2C293003E1DB3 /* FlickrFetcher.m in Sources */,
+				981B0F0D19069211003E1DB3 /* ImageViewController.m in Sources */,
+				981B0EDC18F2C259003E1DB3 /* TopSpotsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981B0EDF18F2C259003E1DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B0EF118F2C259003E1DB3 /* TopSpotsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		981B0EE918F2C259003E1DB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 981B0EBE18F2C259003E1DB3 /* TopSpots */;
+			targetProxy = 981B0EE818F2C259003E1DB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		981B0ECB18F2C259003E1DB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				981B0ECC18F2C259003E1DB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		981B0ED418F2C259003E1DB3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				981B0ED518F2C259003E1DB3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		981B0EED18F2C259003E1DB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				981B0EEE18F2C259003E1DB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		981B0EF218F2C259003E1DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thilagawathy Duraisamy (2K65JWXH5N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Thilagawathy Duraisamy (2K65JWXH5N)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "31cb7cd6-9237-4be8-9def-bdf6dae5c9e1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		981B0EF318F2C259003E1DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thilagawathy Duraisamy (2K65JWXH5N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Thilagawathy Duraisamy (2K65JWXH5N)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "31cb7cd6-9237-4be8-9def-bdf6dae5c9e1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		981B0EF518F2C259003E1DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopSpots/TopSpots-Prefix.pch";
+				INFOPLIST_FILE = "TopSpots/TopSpots-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		981B0EF618F2C259003E1DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopSpots/TopSpots-Prefix.pch";
+				INFOPLIST_FILE = "TopSpots/TopSpots-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		981B0EF818F2C259003E1DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopSpots.app/TopSpots";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopSpots/TopSpots-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TopSpotsTests/TopSpotsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		981B0EF918F2C259003E1DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopSpots.app/TopSpots";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopSpots/TopSpots-Prefix.pch";
+				INFOPLIST_FILE = "TopSpotsTests/TopSpotsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		98C73EC61A2BF1C800CE9ACC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Thilagawathy Duraisamy (2K65JWXH5N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Thilagawathy Duraisamy (2K65JWXH5N)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "31cb7cd6-9237-4be8-9def-bdf6dae5c9e1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		98C73EC71A2BF1C800CE9ACC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopSpots/TopSpots-Prefix.pch";
+				INFOPLIST_FILE = "TopSpots/TopSpots-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		98C73EC81A2BF1C800CE9ACC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopSpots.app/TopSpots";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TopSpots/TopSpots-Prefix.pch";
+				INFOPLIST_FILE = "TopSpotsTests/TopSpotsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		981B0EBA18F2C259003E1DB3 /* Build configuration list for PBXProject "TopSpots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981B0EF218F2C259003E1DB3 /* Debug */,
+				981B0EF318F2C259003E1DB3 /* Release */,
+				98C73EC61A2BF1C800CE9ACC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		981B0EF418F2C259003E1DB3 /* Build configuration list for PBXNativeTarget "TopSpots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981B0EF518F2C259003E1DB3 /* Debug */,
+				981B0EF618F2C259003E1DB3 /* Release */,
+				98C73EC71A2BF1C800CE9ACC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		981B0EF718F2C259003E1DB3 /* Build configuration list for PBXNativeTarget "TopSpotsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				981B0EF818F2C259003E1DB3 /* Debug */,
+				981B0EF918F2C259003E1DB3 /* Release */,
+				98C73EC81A2BF1C800CE9ACC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 981B0EB718F2C259003E1DB3 /* Project object */;
+}
