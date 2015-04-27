@@ -25,6 +25,8 @@
 		981B0F0318F2C60E003E1DB3 /* TopPlaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0F0218F2C60E003E1DB3 /* TopPlaces.m */; };
 		981B0F0718FEA6AB003E1DB3 /* CityPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0F0618FEA6AB003E1DB3 /* CityPhotosViewController.m */; };
 		981B0F0D19069211003E1DB3 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0F0C19069211003E1DB3 /* ImageViewController.m */; };
+		98A235CA1AEDC59C00AF2A11 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A235C91AEDC59C00AF2A11 /* CloudKit.framework */; };
+		98A235D11AEDD97100AF2A11 /* DBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A235D01AEDD97100AF2A11 /* DBActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -78,6 +80,10 @@
 		981B0F0618FEA6AB003E1DB3 /* CityPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityPhotosViewController.m; sourceTree = "<group>"; };
 		981B0F0B19069211003E1DB3 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		981B0F0C19069211003E1DB3 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		98A235C81AEDC58000AF2A11 /* TopSpots.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TopSpots.entitlements; sourceTree = "<group>"; };
+		98A235C91AEDC59C00AF2A11 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		98A235CF1AEDD97100AF2A11 /* DBActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBActivity.h; sourceTree = "<group>"; };
+		98A235D01AEDD97100AF2A11 /* DBActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A235CA1AEDC59C00AF2A11 /* CloudKit.framework in Frameworks */,
 				981B0EC518F2C259003E1DB3 /* CoreGraphics.framework in Frameworks */,
 				981B0EC718F2C259003E1DB3 /* UIKit.framework in Frameworks */,
 				981B0EC318F2C259003E1DB3 /* Foundation.framework in Frameworks */,
@@ -126,6 +133,7 @@
 		981B0EC118F2C259003E1DB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				98A235C91AEDC59C00AF2A11 /* CloudKit.framework */,
 				981B0EC218F2C259003E1DB3 /* Foundation.framework */,
 				981B0EC418F2C259003E1DB3 /* CoreGraphics.framework */,
 				981B0EC618F2C259003E1DB3 /* UIKit.framework */,
@@ -137,8 +145,11 @@
 		981B0EC818F2C259003E1DB3 /* TopSpots */ = {
 			isa = PBXGroup;
 			children = (
+				98A235C81AEDC58000AF2A11 /* TopSpots.entitlements */,
 				981B0F0118F2C60E003E1DB3 /* TopPlaces.h */,
 				981B0F0218F2C60E003E1DB3 /* TopPlaces.m */,
+				98A235CF1AEDD97100AF2A11 /* DBActivity.h */,
+				98A235D01AEDD97100AF2A11 /* DBActivity.m */,
 				981B0ED418F2C259003E1DB3 /* Main_iPhone.storyboard */,
 				981B0F0B19069211003E1DB3 /* ImageViewController.h */,
 				981B0F0C19069211003E1DB3 /* ImageViewController.m */,
@@ -245,6 +256,11 @@
 				TargetAttributes = {
 					981B0EBE18F2C259003E1DB3 = {
 						DevelopmentTeam = 2K65JWXH5N;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					981B0EE218F2C259003E1DB3 = {
 						TestTargetID = 981B0EBE18F2C259003E1DB3;
@@ -298,6 +314,7 @@
 			files = (
 				981B0F0718FEA6AB003E1DB3 /* CityPhotosViewController.m in Sources */,
 				981B0F0318F2C60E003E1DB3 /* TopPlaces.m in Sources */,
+				98A235D11AEDD97100AF2A11 /* DBActivity.m in Sources */,
 				981B0ED318F2C259003E1DB3 /* TopSpotsAppDelegate.m in Sources */,
 				981B0ECF18F2C259003E1DB3 /* main.m in Sources */,
 				981B0EFD18F2C293003E1DB3 /* FlickrFetcher.m in Sources */,
@@ -433,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TopSpots/TopSpots.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -451,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TopSpots/TopSpots.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -544,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TopSpots/TopSpots.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
