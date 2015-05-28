@@ -9,6 +9,7 @@
 #import "TopPlaces.h"
 #import "FlickrFetcher.h"
 #import "CityPhotosViewController.h"
+#import "DBActivity.h"
 
 @interface TopPlaces ()
 
@@ -49,6 +50,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    UIImage *image = [[UIImage alloc] initWithContentsOfFile:@"nature.png"];
+    [DBActivity initRecordSave:@"siteseeing" countryName:@"Europe" cityName:@"paris" photo:image];
+
     // Query the country top places
     self.url = [FlickrFetcher  URLforTopPlaces];
     

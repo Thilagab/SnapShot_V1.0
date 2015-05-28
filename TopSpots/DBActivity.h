@@ -12,5 +12,7 @@
 @interface DBActivity : NSObject
 
 
++(void) initRecordSave:(NSString *)name countryName:(NSString *)countryName cityName:(NSString *)cityName photo:(UIImage *) image;
++(void) saveRecord: (CKRecord *)record;
 
 @end

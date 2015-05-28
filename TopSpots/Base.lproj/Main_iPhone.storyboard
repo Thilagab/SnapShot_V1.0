@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="kwV-cn-f7g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="kwV-cn-f7g">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Country and City-->
@@ -39,7 +39,7 @@
                                     <color key="tintColor" red="0.45872077722519428" green="0.77103414227551625" blue="0.87204333563535918" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.85529663922052035" green="0.8775068758774548" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="xTK-8x-Qv2" kind="push" identifier="City Photos List" id="gbK-eM-Ese"/>
                                 </connections>
@@ -157,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="-531" y="37"/>
         </scene>
-        <!--Recent-->
+        <!--Save-->
         <scene sceneID="6MA-Kd-jNb">
             <objects>
                 <tableViewController id="jY9-V1-uci" sceneMemberID="viewController">
@@ -180,7 +180,7 @@
                             <outlet property="delegate" destination="jY9-V1-uci" id="0ng-Dk-iE5"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Recent" id="bjJ-xR-agc"/>
+                    <tabBarItem key="tabBarItem" title="Save" id="bjJ-xR-agc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIa-zm-7v2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

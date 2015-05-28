@@ -27,6 +27,8 @@
 		981B0F0D19069211003E1DB3 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 981B0F0C19069211003E1DB3 /* ImageViewController.m */; };
 		98A235CA1AEDC59C00AF2A11 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A235C91AEDC59C00AF2A11 /* CloudKit.framework */; };
 		98A235D11AEDD97100AF2A11 /* DBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A235D01AEDD97100AF2A11 /* DBActivity.m */; };
+		98C2503A1B096BDA00C1B968 /* nature.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C250391B096BDA00C1B968 /* nature.png */; };
+		98C5DA231B17DEB500ACB698 /* SaveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C5DA221B17DEB500ACB698 /* SaveTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -84,6 +86,9 @@
 		98A235C91AEDC59C00AF2A11 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		98A235CF1AEDD97100AF2A11 /* DBActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBActivity.h; sourceTree = "<group>"; };
 		98A235D01AEDD97100AF2A11 /* DBActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBActivity.m; sourceTree = "<group>"; };
+		98C250391B096BDA00C1B968 /* nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nature.png; sourceTree = "<group>"; };
+		98C5DA211B17DEB500ACB698 /* SaveTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveTableView.h; sourceTree = "<group>"; };
+		98C5DA221B17DEB500ACB698 /* SaveTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,9 +161,12 @@
 				981B0F0518FEA6AB003E1DB3 /* CityPhotosViewController.h */,
 				981B0F0618FEA6AB003E1DB3 /* CityPhotosViewController.m */,
 				981B0EDA18F2C259003E1DB3 /* TopSpotsViewController.h */,
+				98C5DA211B17DEB500ACB698 /* SaveTableView.h */,
+				98C5DA221B17DEB500ACB698 /* SaveTableView.m */,
 				981B0EDB18F2C259003E1DB3 /* TopSpotsViewController.m */,
 				981B0EFA18F2C293003E1DB3 /* Flickr Fetcher */,
 				981B0EDD18F2C259003E1DB3 /* Images.xcassets */,
+				98C250391B096BDA00C1B968 /* nature.png */,
 				981B0EC918F2C259003E1DB3 /* Supporting Files */,
 			);
 			path = TopSpots;
@@ -291,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C2503A1B096BDA00C1B968 /* nature.png in Resources */,
 				981B0EDE18F2C259003E1DB3 /* Images.xcassets in Resources */,
 				981B0ED618F2C259003E1DB3 /* Main_iPhone.storyboard in Resources */,
 				981B0ECD18F2C259003E1DB3 /* InfoPlist.strings in Resources */,
@@ -316,6 +325,7 @@
 				981B0F0318F2C60E003E1DB3 /* TopPlaces.m in Sources */,
 				98A235D11AEDD97100AF2A11 /* DBActivity.m in Sources */,
 				981B0ED318F2C259003E1DB3 /* TopSpotsAppDelegate.m in Sources */,
+				98C5DA231B17DEB500ACB698 /* SaveTableView.m in Sources */,
 				981B0ECF18F2C259003E1DB3 /* main.m in Sources */,
 				981B0EFD18F2C293003E1DB3 /* FlickrFetcher.m in Sources */,
 				981B0F0D19069211003E1DB3 /* ImageViewController.m in Sources */,

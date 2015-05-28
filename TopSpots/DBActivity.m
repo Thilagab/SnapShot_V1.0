@@ -10,10 +10,10 @@
 
 @implementation DBActivity
 
--(void) initRecordSave:(NSString *)name countryName:(NSString *)countryName cityName:(NSString *)cityName photo:(UIImage *) image
++(void) initRecordSave:(NSString *)name countryName:(NSString *)countryName cityName:(NSString *)cityName photo:(UIImage *) image
 {
     // Prepare the record
-    CKRecordID *rID = [[CKRecordID alloc] initWithRecordName:@"ph"];
+    CKRecordID *rID = [[CKRecordID alloc] initWithRecordName:@"1"];
     CKRecord *photoRecord = [[CKRecord alloc] initWithRecordType:@"SanpShot" recordID:rID];
     
     photoRecord[@"Name"] = name;
@@ -27,7 +27,7 @@
 }
 
      
--(void) saveRecord: (CKRecord *)record
++(void) saveRecord: (CKRecord *)record
 {
     //Save the record in default container cloud kit
     
@@ -37,11 +37,11 @@
     [publicDatabase saveRecord:record completionHandler:^(CKRecord *record, NSError *error) {
         
         if (!error) {
-            NSLog(@"Record saved");
+            NSLog(@"Record saved %@" , error.description);
         }
         else
         {
-            NSLog(@"Failed to save record");
+            NSLog(@"Failed to save record %@",error.description);
         }
     }];
      
